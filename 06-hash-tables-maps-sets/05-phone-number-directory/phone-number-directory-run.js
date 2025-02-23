@@ -8,4 +8,4 @@ const phoneNumbers = [
 
 const result = phoneNumberDirectory(phoneNumbers);
 
-console.log(result.get('John'));
+console.log(result.get('Joe'));

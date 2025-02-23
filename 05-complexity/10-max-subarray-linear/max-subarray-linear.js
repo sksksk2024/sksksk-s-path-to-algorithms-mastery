@@ -1,16 +1,18 @@
 function maxSubarraySum(arr, k) {
-  let currentSum = 0;
-  let maxSum = 0;
+  if (arr.length < k) return -Infinity; // Ensure a valid return for small arrays
 
+  let maxSum = -Infinity, // Ensure it works for all negative values
+    currentSum = 0;
+
+  // First window sum
   for (let i = 0; i < k; ++i) {
-    maxSum += arr[i];
+    currentSum += arr[i];
   }
+  maxSum = currentSum;
 
-  currentSum = maxSum;
-
+  // Slide the window
   for (let i = k; i < arr.length; ++i) {
-    currentSum = currentSum - arr[i - k] + arr[i];
-
+    currentSum += arr[i] - arr[i - k]; // Remove leftmost, add new element
     maxSum = Math.max(maxSum, currentSum);
   }
 

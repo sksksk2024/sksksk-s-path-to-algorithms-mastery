@@ -4,7 +4,8 @@ function maxSubarraySum(arr, k) {
   for (let i = 0; i <= arr.length - k; ++i) {
     let currentSum = 0;
 
-    for (let j = i; j <= i + k; ++j) {
+    for (let j = i; j < i + k; ++j) {
+      // Fix: `j < i + k`
       currentSum += arr[j];
     }
 

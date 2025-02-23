@@ -7,4 +7,6 @@ myHashTable.set('b', 2);
 myHashTable.set('c', 3);
 myHashTable.set('d', 4);
 
+// myHashTable.printTable();
+
 console.log(myHashTable.getValues());
