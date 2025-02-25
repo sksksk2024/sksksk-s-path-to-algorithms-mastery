@@ -1,6 +1,6 @@
 const bubbleSort = require('./bubble-sort');
 
-const array = [5, 4, 2, 1];
+const array = [5, 4, 100, 2, 1];
 
 const result = bubbleSort(array);
 
