@@ -1,4 +1,4 @@
-- **[UBB Last Adjustments](https://github.com/sksksk2024/All-UBB-Algorithms-2025)** – More algorithms from the courses I follow.
+- **[More algorithms from the courses I follow.](https://github.com/sksksk2024/All-UBB-Algorithms-2025)**
 
 - # Traversy JS Challenges: Data Structures & Algorithms
 
